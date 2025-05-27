@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <label for="password">Password:</label>
+        <div class="password-container">
+            <input type="password" id="password" name="password" required>
+            <span class="toggle-eye" onclick="togglePassword()">👁️</span>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="Button" >Login</button></form></br><br><br>
+            <label for="signup"> Don't Have an account? sign up</label>
+            <button for="signup" id="Button1" type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+        </form>
+    </div>
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+            if(passwordField.type === "text") {
+                document.querySelector(".toggle-eye").innerHTML = "🙈"; 
+            } else {
+                document.querySelector(".toggle-eye").innerHTML = "👁️"; 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Sign Up Page</title>
+    <style>
+        /* Styles for the login page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    background-image: url("./animals background.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+
+
+.container {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: lightgreen;
+
+}
+
+
+.container button:hover {
+    background-color: #2ce774;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+.container input {
+    width: 80%;
+    padding: 8px;
+    padding-right: 30px;
+}
+.container .toggle-eye {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#Button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#Button:hover {
+    background-color: #45a049;
+}
+    </style>>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="post">
+            <div class="form-group">
+                <label for="username">Choose a Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <label for="password">Choose a Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-eye" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="Button">Create Account</button>
+            </div>
+            <div class="form-group">
+                <label for="login">Already have an account?</label>
+                <button id="Button1" type="button" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                document.querySelector(".toggle-eye").innerHTML = "🙈";
+            } else {
+                passwordField.type = "password";
+                document.querySelector(".toggle-eye").innerHTML = "👁️";
+            }
+        }
+    </script>
+</body>
+</html>

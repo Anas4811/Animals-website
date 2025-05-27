@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>Reptiles</title>
+        <style>
+            body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef7fc;
+            color: #333;
+            background-image: url("./reptile.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            line-height: 1.6;
+            }
+
+            header {
+            background-color: #3b8d4d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+            margin: 0;
+            font-size: 2.5em;
+            }
+
+            main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            }
+
+            section h2 {
+            color: #3b8d4d;
+            border-bottom: 3px solid #3b8d4d;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            }
+
+            ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            }
+
+            li {
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            a {
+            text-decoration: none;
+            color: #3b8d4d;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            }
+
+            a:hover {
+            color: #2e7d32;
+            }
+
+            img {
+            width: 60px;
+            height: 60px;
+            margin-left: 10px;
+            border-radius: 50%;
+            border: 3px solid #3b8d4d;
+            transition: transform 0.2s ease;
+            }
+
+            img:hover {
+            transform: rotate(10deg);
+            }
+
+            footer {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            footer p {
+            margin: 0;
+            font-size: 0.9em;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>Welcome to the Reptiles Page</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Popular Reptiles</h2>
+            <ul>
+                <li>
+                    <a href="komodo_dragon.php" >
+                        Komodo Dragon
+                        <img src="komodo_dragon.png" alt="Komodo Dragon">
+                    </a>
+                </li>
+                <li>
+                    <a href="green_lagua.php" >
+                        Green Iguana
+                        <img src="green_iguana.png" alt="Green Iguana">
+                    </a>
+                </li>
+                <li>
+                    <a href="king_cobra.php" >
+                        King Cobra
+                        <img src="king_cobra.png" alt="King Cobra">
+                    </a>
+                </li>
+                <li>
+                    <a href="leopard_gecko.php" >
+                        Leopard Gecko
+                        <img src="leopard_gecko.png" alt="Leopard Gecko">
+                    </a>
+                </li>
+                <li>
+                    <a href="chameleon.php">
+                        Chameleon
+                        <img src="hameleon.png" alt="Chameleon">
+                    </a>
+                </li>
+                <li>
+                    <a href="python.php">
+                        Green Tree Python
+                        <img src="python.png" alt="Python">
+                    </a>
+                </li>
+                <li>
+                    <a href="bearded_dragon.php" >
+                        Bearded Dragon
+                        <img src="bearded_dragon.png" alt="Bearded Dragon">
+                    </a>
+                </li>
+                <li>
+                    <a href="box_turtle.php" >
+                        <img src="box_turtle.png" alt="Box Turtle">
+                    </a>
+                </li>
+                <li>
+                    <a href="green_anaconda.php" >
+                        Green Anaconda
+                        <img src="green_anaconda.png" alt="Green Anaconda">
+                    </a>
+                </li>
+                <li>
+                    <a href="gila_monster.php" >
+                        Gila Monster
+                        <img src="gila_monster.png" alt="Gila Monster">
+                    </a>
+                </li>
+                <li>
+                    <a href="crocodile.php" target="_blank">
+                        Crocodile
+                        <img src="crockodile.png" alt="Crocodile">
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Reptiles World. All rights reserved.</p>
+    </footer>
+</body>
